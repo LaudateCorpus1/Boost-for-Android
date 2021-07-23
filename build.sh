@@ -307,7 +307,7 @@ echo " cores available = " $num_cores
 
 #------------------------------------------- 
                 
-
+sed -i '/^[^#].*STATX/s/^/#/' libs/filesystem/build/Jamfile.v2
     
     
 
