@@ -24,7 +24,7 @@ export NDK_DIR
 export ABI_NAMES="arm64-v8a armeabi-v7a x86 x86_64"
 
 # Whether to build boost as dynamic or shared libraries (or both)
-export LINKAGES="shared static" # can be "shared" or "static" or "shared static" (both)
+export LINKAGES="static" # can be "shared" or "static" or "shared static" (both)
 
 
 #----------------------------------------------------------------
