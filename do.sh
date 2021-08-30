@@ -12,11 +12,13 @@
 #----------------------------------------------------------------
 
 # Specify the path to boost source code dir 
-export BOOST_DIR=/home/beran/ruzne/boost_1_76_0
+export BOOST_DIR=$HOME/boost_*_*_*
 
 
-# Where the Android Ndk you want to build with is located
-export NDK_DIR=/home/beran/Android/Sdk/ndk/21.4.7075529
+# Where the Android Ndk you want to build with is located; use the newest one
+NDK_DIR=$HOME/Android/Sdk/ndk
+NDK_DIR=$NDK_DIR/$(ls $NDK_DIR | tail -n 1)
+export NDK_DIR
 
 # Which target abis (~ architecture + instruction set) you want to build for     
 export ABI_NAMES="arm64-v8a armeabi-v7a x86 x86_64"
