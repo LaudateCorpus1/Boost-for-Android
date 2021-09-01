@@ -338,6 +338,8 @@ for LINKAGE in $LINKAGES; do
                 architecture=$arch_for_abi \
                 abi=$abi    \
                 link=$LINKAGE                  \
+                lto=on \
+                lto-mode=thin \
                 threading=multi              \
                 target-os=android           \
                 --user-config=$USER_CONFIG_FILE \
